@@ -1,4 +1,4 @@
-# MacroscopTestApp2
+# MacroscopTestApp
 
 Тестовое задание
 
