@@ -1,0 +1,32 @@
+﻿<Window x:Class="MacroscopTestApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MacroscopTestApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="ImagesGrid" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        <Button Name="DownloadAllButton" Grid.Row="1" Content="Загрузить все изображения" Style="{StaticResource CommonButtonStyle}"/>
+        <TextBlock Grid.Row="2" Text="Прогресс загрузки изображений:" Style="{StaticResource CommonTextBlockStyle}"/>
+        <ProgressBar Name ="DownloadProgressBar" Grid.Row="3" Style="{StaticResource CommonProgressBarStyle}"/>
+    </Grid>
+</Window>
